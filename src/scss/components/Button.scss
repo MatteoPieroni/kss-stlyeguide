@@ -1,0 +1,37 @@
+// Buttons
+//
+// Various button styles.
+//
+// Markup:
+// <a class="button {{modifier_class}}">Link as a Button</a>
+// <button class="button {{modifier_class}}">Button Element</button>
+// <input class="button {{modifier_class}}" type="button" value="Input Button" />
+//
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .button--small - When user hovers over button.
+// .button--large - When button is focused.
+//
+// Styleguide Components.button (organization, just as before)
+.button {
+    background: black;
+    color: #fff;
+
+    &:hover {
+        background: red;
+        color: blue;
+    }
+
+    &:focus {
+        background: yellow;
+        color: green;
+    }
+
+    &.button--small {
+        font-size: .5em;
+    }
+
+    &.button--large {
+        font-size: 1.5em;
+    }
+}
