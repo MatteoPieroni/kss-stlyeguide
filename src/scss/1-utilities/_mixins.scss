@@ -1,0 +1,35 @@
+// @include bp-[param] {}
+//
+// Outputs a media query with the set breakpoint.
+//
+// mobile - Used for mobile screens
+// tablet - Used for tablet screens
+// desktop - Used for desktop screens
+// large-desktop - Used for large desktop screens
+//
+// Weight: 1
+//
+// Styleguide Utilities - Sass - breakpoints
+@mixin bp-mobile {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin bp-tablet {
+    @media only screen and (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin bp-desktop {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-large-desktop {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}

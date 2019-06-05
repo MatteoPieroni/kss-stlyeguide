@@ -23,6 +23,9 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: "[name].css",
+            options: {
+                publicPath: './'
+            }
         }),
         new KssWebpackPlugin(KssConfig.config)
     ],
@@ -44,16 +47,36 @@ module.exports = {
                             ]
                         }
                     }, {
-                        loader: "sass-loader",
+                        loader: "sass-loader"
                     }, {
                         // adds the utilities files to each single sass file
                         loader: "sass-resources-loader",
                         options: {
                             // utilities files to be added in the file below
-                            resources: require(path.join(process.cwd(), "src/scss/utilities/utilities.js")),
+                            resources: require(path.join(process.cwd(), "src/scss/1-utilities/utilities.js")),
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/'
+                    }
+                }]
+            },
+            {
+                test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'icons/'
+                    }
+                }]
             }
         ]
     }

@@ -1,0 +1,246 @@
+﻿// Single Product In Category
+//
+// Various button styles.
+//
+// Markup: SingleProductShop.html
+//
+// .product-item--empty - The product has not been added to the customer's basket
+// .product-item--offer - The product is under a promotion
+//
+// Styleguide Components - Products - Single Product
+.product-item {
+    list-style: none;
+    font-size: .8em;
+    position: relative;
+
+    .product-item__favourites {
+        position: absolute;
+        top: 2%;
+        right: 1%;
+        padding: 5px 5px 10px 10px;
+        font-size: 1.2em;
+        text-align: center;
+        color: #bbb;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms;
+        z-index: 2;
+    }
+
+    .product-item__image {
+        position: relative;
+        float: none;
+        width: 100%;
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .product-item__title {
+        margin: 5px 0 10px;
+        font-size: 1.05em;
+        line-height: 1.7em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        a {
+            color: #232323;
+        }
+    }
+
+    .rating {
+        padding: 0;
+    }
+
+    .product-item__add-to-basket {
+        clear: both;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .product-item__add {
+        margin-left: 10%;
+        padding: 0 10%;
+    }
+
+    .product-item__price {
+        float: left;
+        padding-right: 5px;
+        min-width: 70px;
+        font-family: ACMontserratBoldFont;
+        line-height: 32px;
+        font-size: 1.6em;
+    }
+
+    .product-item__button--add {
+        display: none;
+    }
+
+    .product-item__qty-variation {
+        display: block;
+    }
+
+    .product-item__portion-price {
+        display: none;
+    }
+
+    .product-item__dietary-icons-container {
+        display: none;
+    }
+
+    .product-item__dietary-icons {
+        display: none;
+
+        img {
+            max-width: 23px;
+            height: 15px;
+            margin-right: 5px;
+        }
+    }
+
+    .product-item__additional-info {
+        clear: both;
+        font-size: .87em;
+        color: #aaa;
+    }
+
+    .product-item__input-quantity {
+        position: relative;
+        float: left;
+        width: 55%;
+        max-width: 100px;
+    }
+
+    .product-item__add-sign {
+        display: inline-block;
+        margin-right: 2%;
+        border: 1px solid $red500;
+        padding: 0;
+        width: 30px;
+        max-width: 36px;
+        background-color: $red500;
+        font-family: ACMontserratBoldFont;
+        line-height: 30px;
+        color: white;
+        text-align: center;
+        font-size: 1.25em;
+        cursor: pointer;
+    }
+
+    .product-item__textbox-quantity {
+        display: inline-block;
+        padding: 0;
+        width: 20px;
+        max-width: 36px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 1.25em;
+        color: $grey900;
+    }
+
+    .product-item__basket-quantity {
+        display: inline-block;
+        float: left;
+        clear: both;
+        margin: 10px 0;
+        padding: 10px 15px;
+        width: 100%;
+        background-color: #edf7e4;
+        color: #65b144;
+
+        a {
+            color: $green500;
+        }
+    }
+
+    .product-item__promotion {
+        display: inline-block;
+        margin: 5px 0;
+        border: 1px solid $red500;
+        padding: 5px 10px;
+        max-width: 99%;
+        font-size: 1.1em;
+        color: $red500;
+        cursor: pointer;
+    }
+
+    .product-item__add {
+        display: none;
+    }
+
+    .product-item__qty-variation {
+        display: block;
+    }
+
+    .product-item__portion-price {
+        display: none;
+    }
+
+    .product-item__dietary-icons-container {
+        display: none;
+    }
+
+    .product-item__dietary-icons {
+        display: none;
+    }
+
+    .product-item__info {
+        display: none;
+    }
+
+    .product-item__price--offer {
+        display: none;
+        background: url(https://www.abelandcole.co.uk/src/images/shop/red-line.png) no-repeat;
+        background-size: 70% 3px;
+        background-position: left center;
+        line-height: 15px;
+        color: #878787;
+        font-size: .8em;
+    }
+
+    .product-item--empty {
+        .product-item__add {
+            display: block;
+        }
+
+        .product-item__qty-variation {
+            display: none;
+        }
+
+        .product-item__portion-price {
+            display: block;
+        }
+
+        .product-item__dietary-icons-container {
+            display: block;
+        }
+
+        .product-item__dietary-icons {
+            display: block;
+        }
+
+        .product-item__info {
+            display: block;
+        }
+
+        .product-item__promotion {
+            display: none;
+        }
+    }
+
+    .product-item--offer {
+        .product-item__price--offer {
+            display: block;
+        }
+
+        .product-item__price {
+            color: $red500;
+        }
+    }
+}
+.kss-product-shop {
+    width: 30%;
+}

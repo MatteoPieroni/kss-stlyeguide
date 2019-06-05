@@ -1,0 +1,52 @@
+/* FONTS */
+@font-face {
+    font-family: ACFont;
+    font-display: swap;
+    src: url("../../../assets/fonts/ABELCOLE01.eot"); /* EOT file for IE */
+    src: url("../../../assets/fonts/ABELCOLE01.ttf"); /* TTF file for CSS3 browsers */
+    src: url("../../../assets/fonts/ABELCOLE01.eot?#iefix") format('embedded-opentype'), url("../../../assets/fonts/ABELCOLE01.woff2") format('woff2'), url("../../../assets/fonts/ABELCOLE01.woff") format('woff'), url("/css/fonts/ABELCOLE01.TTF") format('truetype');
+}
+
+@font-face {
+    font-family: ApplesAndCarrots;
+    font-display: swap;
+    src: url("../../../assets/fonts/ApplesAndCarrots_W_Rg.eot");
+    src: url("../../../assets/fonts/ApplesAndCarrots_W_Rg.eot?#iefix") format('embedded-opentype'), url("../../../assets/fonts/ApplesAndCarrots_W_Rg.woff2") format('woff2'), url("../../../assets/fonts/ApplesAndCarrots_W_Rg.woff") format('woff'), url("../../../assets/fonts/ApplesAndCarrots_W_Rg.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: ACMontserratBoldFont;
+    font-display: swap;
+    src: url("../../../assets/fonts/montserrat-bold-AC.eot");
+    src: url("../../../assets/fonts/montserrat-bold-AC.eot?#iefix") format('embedded-opentype'), url("../../../assets/fonts/montserrat-bold-AC.woff2") format('woff2'), url("../../../assets/fonts/montserrat-bold-AC.woff") format('woff'), url("../../../assets/fonts/montserrat-bold-AC.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: ACMontserratHairlineFont;
+    font-display: swap;
+    src: url("../../../assets/fonts/montserrat-hairline-AC.eot");
+    src: url("../../../assets/fonts/montserrat-hairline-AC.eot?#iefix") format('embedded-opentype'), url("../../../assets/fonts/montserrat-hairline-AC.woff2") format('woff2'), url("../../../assets/fonts/montserrat-hairline-AC.woff") format('woff'), url("../../../assets/fonts/montserrat-hairline-AC.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: ACMontserratLightFont;
+    font-display: swap;
+    src: url("../../../assets/fonts/montserrat-light-AC.eot");
+    src: url("../../../assets/fonts/montserrat-light-AC.eot?#iefix") format('embedded-opentype'), url("../../../assets/fonts/montserrat-light-AC.woff2") format('woff2'), url("../../../assets/fonts/montserrat-light-AC.woff") format('woff'), url("../../../assets/fonts/montserrat-light-AC.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: ACMontserratRegularFont;
+    font-display: swap;
+    src: url("../../../assets/fonts/montserrat-regular-AC.eot");
+    src: url("../../../assets/fonts/montserrat-regular-AC.eot?#iefix") format('embedded-opentype'), url("../../../assets/fonts/montserrat-regular-AC.woff2") format('woff2'), url("../../../assets/fonts/montserrat-regular-AC.woff") format('woff'), url("../../../assets/fonts/montserrat-regular-AC.ttf") format('truetype');
+}
+
+body {
+    font-family: ACMontserratRegularFont, Arial, sans-serif;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}

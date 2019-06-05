@@ -1,2 +1,9 @@
-import './scss/typography/typography.scss';
-import './scss/components/Button.scss';
+import './scss/1-utilities/utilities.scss';
+import './scss/1-utilities/sass.scss';
+import './scss/1-utilities/_mixins.scss';
+import './scss/1-utilities/animations.scss';
+import './scss/1-utilities/colours.scss';
+import './scss/3-typography/icons.scss';
+import './scss/3-typography/typography.scss';
+import './scss/4-components/Button.scss';
+import './scss/4-components/SingleProductInCategory.scss';
